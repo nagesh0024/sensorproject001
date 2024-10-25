@@ -1,0 +1,22 @@
+[ 2024-10-25 11:36:25,680 ] 148 numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2024-10-25 11:36:25,680 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-10-25 11:36:27,509 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-25 11:36:27,513 ] 224 werkzeug - INFO -  * Debugger PIN: 129-413-733
+[ 2024-10-25 11:36:36,930 ] 69 root - INFO - Entered initiated_data_ingestion method of data_integration class
+[ 2024-10-25 11:36:36,930 ] 46 root - INFO - Exporting data from mongodb
+[ 2024-10-25 11:36:37,829 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\pymongo\\settings.py', reloading
+[ 2024-10-25 11:36:37,831 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\pymongo\\mongo_client.py', reloading
+[ 2024-10-25 11:36:37,833 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+[ 2024-10-25 11:36:37,836 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+[ 2024-10-25 11:36:37,836 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\http\\server.py', reloading
+[ 2024-10-25 11:36:37,837 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\socketserver.py', reloading
+[ 2024-10-25 11:36:37,840 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\threading.py', reloading
+[ 2024-10-25 11:36:39,596 ] 56 root - INFO - saving exported data into feature store file path :artifacts
+[ 2024-10-25 11:36:39,649 ] 74 root - INFO - got the data from mongodb
+[ 2024-10-25 11:36:39,649 ] 76 root - INFO - exited initiate_data_ingestion methos of data ingestion class
+[ 2024-10-25 11:36:39,649 ] 67 root - INFO - Entered initiate data transformation method of data transfomration class
+[ 2024-10-25 11:36:39,779 ] 49 root - INFO - Entered the save_object method of mainutils class
+[ 2024-10-25 11:36:39,781 ] 57 root - INFO - Entered the save_object method of mainutils class
+[ 2024-10-25 11:36:39,781 ] 190 root - INFO - Splitting training and testing input and target feature
+[ 2024-10-25 11:36:39,781 ] 204 root - INFO - Extracting model config file path
+[ 2024-10-25 11:36:39,782 ] 216 root - INFO - Extracting model config file path

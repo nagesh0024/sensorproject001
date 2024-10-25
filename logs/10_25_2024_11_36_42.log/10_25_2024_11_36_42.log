@@ -1,0 +1,756 @@
+[ 2024-10-25 11:36:42,734 ] 148 numexpr.utils - INFO - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2024-10-25 11:36:42,734 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2024-10-25 11:36:45,088 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2024-10-25 11:36:45,092 ] 224 werkzeug - INFO -  * Debugger PIN: 129-413-733
+[ 2024-10-25 11:36:45,110 ] 69 root - INFO - Entered initiated_data_ingestion method of data_integration class
+[ 2024-10-25 11:36:45,110 ] 46 root - INFO - Exporting data from mongodb
+[ 2024-10-25 11:37:02,585 ] 69 root - INFO - Entered initiated_data_ingestion method of data_integration class
+[ 2024-10-25 11:37:02,585 ] 46 root - INFO - Exporting data from mongodb
+[ 2024-10-25 11:37:07,559 ] 56 root - INFO - saving exported data into feature store file path :artifacts
+[ 2024-10-25 11:37:07,593 ] 74 root - INFO - got the data from mongodb
+[ 2024-10-25 11:37:07,593 ] 76 root - INFO - exited initiate_data_ingestion methos of data ingestion class
+[ 2024-10-25 11:37:07,593 ] 67 root - INFO - Entered initiate data transformation method of data transfomration class
+[ 2024-10-25 11:37:07,700 ] 49 root - INFO - Entered the save_object method of mainutils class
+[ 2024-10-25 11:37:07,701 ] 57 root - INFO - Entered the save_object method of mainutils class
+[ 2024-10-25 11:37:07,701 ] 190 root - INFO - Splitting training and testing input and target feature
+[ 2024-10-25 11:37:07,701 ] 204 root - INFO - Extracting model config file path
+[ 2024-10-25 11:37:07,702 ] 216 root - INFO - Extracting model config file path
+[ 2024-10-25 11:37:16,183 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\sklearn\\model_selection\\_validation.py', reloading
+[ 2024-10-25 11:37:16,198 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\xgboost\\core.py', reloading
+[ 2024-10-25 11:37:16,201 ] 224 werkzeug - INFO -  * Detected change in 'C:\\Users\\LENOVO\\anaconda3\\Lib\\site-packages\\xgboost\\data.py', reloading
+[ 2024-10-25 11:37:16,342 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a55890 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1137, in submit
+    raise RuntimeError('cannot schedule new futures after '
+RuntimeError: cannot schedule new futures after interpreter shutdown
+[ 2024-10-25 11:37:16,441 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c8842218d0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,453 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884212a50 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,457 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884202310 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,460 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c8827ab290 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,464 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a55050 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,468 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c882cfefd0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,477 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a8ee90 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,516 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c8842128d0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,532 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a54410 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,548 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a54d10 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,578 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a634d0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,590 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a79410 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,728 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884220f90 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,739 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884222d10 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:16,889 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c8844736d0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,046 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a556d0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,108 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a63e50 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,268 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a63750 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,318 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884221850 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,324 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c88423fbd0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,337 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a7b710 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,379 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a63550 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,392 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a62cd0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,402 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a54dd0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,415 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a78990 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,420 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a63bd0 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,454 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884236090 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,472 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884221750 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,485 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884201210 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,500 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884a62250 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
+[ 2024-10-25 11:37:17,521 ] 28 concurrent.futures - ERROR - exception calling callback for <Future at 0x1c884220b90 state=finished returned list>
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\_base.py", line 26, in _invoke_callbacks
+    callback(self)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 385, in __call__
+    self.parallel.dispatch_next()
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 834, in dispatch_next
+    if not self.dispatch_one_batch(self._original_iterator):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 901, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\parallel.py", line 819, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\_parallel_backends.py", line 556, in apply_async
+    future = self._workers.submit(SafeFunction(func))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\reusable_executor.py", line 176, in submit
+    return super().submit(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LENOVO\anaconda3\Lib\site-packages\joblib\externals\loky\process_executor.py", line 1131, in submit
+    raise ShutdownExecutorError(
+joblib.externals.loky.process_executor.ShutdownExecutorError: cannot schedule new futures after shutdown
