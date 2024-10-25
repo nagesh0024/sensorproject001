@@ -1,4 +1,21 @@
-pandas
-numpy
+aiofiles
+boto3
+dill
+dnspython
+database-connect
+evidently
+flask
+imblearn
+ipykernel
+jinja2
+mypy-boto3-s3
+neuro-mf
+pip-chill
+python-dotenv
+python-multipart
+seaborn
+types-s3transfer
+wincertstore
+xgboost
 
 -e.
